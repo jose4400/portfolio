@@ -19,7 +19,11 @@ img {
 
 p {
     color: black;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+
+
 }
 
 h1 {
@@ -34,6 +38,12 @@ h1 {
     padding: 20px;
 }
 
+h2 {
+    color: black;
+    font-size: 1.3rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+}
 
 
 .sectionwrapper {
@@ -348,7 +358,7 @@ header nav a {
 
     display: flex;
     flex-wrap: wrap;
-/*    margin: 0 auto;
+    /*    margin: 0 auto;
     */
 
 }
@@ -356,12 +366,131 @@ header nav a {
 #web .col {
     flex-grow: 1;
     flex-basis: 500px;
-/*
+    /*
     margin-left: 5px;
     margin-right: 5px;
 */
-/*    padding: 1rem;
+    /*    padding: 1rem;
     */
 }
 
-/*----------web site design------------*/
+/*----------web site design slut------------*/
+/*---------UX site design------------*/
+
+
+#ux_1 {
+    max-width: 1200px;
+    background-color: white;
+}
+
+#ux_1 .col img {
+    width: 70%;
+}
+
+#ux_1 .sectionwrapper {
+
+    display: flex;
+    flex-wrap: wrap;
+    /*    margin: 0 auto;
+    */
+
+}
+
+#ux_1 .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+    /*
+    margin-left: 5px;
+    margin-right: 5px;
+*/
+    /*    padding: 1rem;
+    */
+}
+
+#ux_2 {
+    max-width: 1200px;
+    background-color: white;
+}
+
+#ux_2 .col img {
+    width: 70%;
+}
+
+#ux_2 .sectionwrapper {
+
+    display: flex;
+    flex-wrap: wrap-reverse;
+    /*    margin: 0 auto;
+    */
+
+}
+
+#ux_2 .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+    /*
+    margin-left: 5px;
+    margin-right: 5px;
+*/
+    /*    padding: 1rem;
+    */
+}
+
+/*---------UX site design slut------------*/
+#ani_1 {
+    max-width: 1200px;
+    background-color: white;
+}
+
+#ani_1 .col img {
+    width: 90%;
+}
+
+#ani_1 .sectionwrapper {
+
+    display: flex;
+    flex-wrap: wrap-reverse;
+    /*    margin: 0 auto;
+    */
+
+}
+
+#ani_1 .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+    /*
+    margin-left: 5px;
+    margin-right: 5px;
+*/
+    /*    padding: 1rem;
+    */
+}
+
+#ani_2 {
+    max-width: 1200px;
+    background-color: white;
+}
+
+#ani_2 .col img {
+    width: 90%;
+}
+
+#ani_2 .sectionwrapper {
+
+    display: flex;
+    flex-wrap: wrap-reverse;
+    /*    margin: 0 auto;
+    */
+
+}
+
+#ani_2 .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+    /*
+    margin-left: 5px;
+    margin-right: 5px;
+*/
+    /*    padding: 1rem;
+    */
+}
