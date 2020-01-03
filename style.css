@@ -56,12 +56,22 @@ section {
 }
 
 
-
-
 .col_wide:hover {
     filter: none;
     -webkit-filter: grayscale(1, 0);
     -webkit-transform: scale(1.01);
+}
+
+
+img {
+    filter: url(filters.svg#grayscale);
+    filter: gray;
+    -webkit-filter: grayscale(1);
+}
+
+img:hover {
+    filter: none;
+    -webkit-filter: none;
 }
 
 /*---------Header design---------*/
@@ -298,12 +308,13 @@ header nav a {
 }
 
 #scroll_front .sectionwrapper {
-    background-image: url(billeder/baggrund.svg);
+    background-image: url(billeder/SVG/baggrund.svg);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 75px;
     display: flex;
     flex-wrap: wrap;
+    top: 40px;
 }
 
 .scroll {
@@ -330,7 +341,8 @@ header nav a {
     background-size: cover;
     width: 30vw;
     height: 40vw;
-    box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);
+    /*    box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);
+    */
     margin-left: 80px;
 
 }
@@ -339,7 +351,7 @@ header nav a {
     background-size: cover;
     width: 30vw;
     height: 40vw;
-    box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);
+    /*    box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);*/
 
 }
 
@@ -347,7 +359,7 @@ header nav a {
     background-size: cover;
     width: 30vw;
     height: 40vw;
-    box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);
+    /*    box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);*/
 
 }
 
@@ -355,7 +367,7 @@ header nav a {
     background-size: cover;
     width: 30vw;
     height: 40vw;
-    box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);
+    /*    box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);*/
 
 }
 
@@ -363,8 +375,7 @@ header nav a {
     background-size: cover;
     width: 30vw;
     height: 40vw;
-    box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);
-
+    /*    box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);*/
 }
 
 /*----------forside design slut------------*/
