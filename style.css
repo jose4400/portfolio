@@ -223,6 +223,9 @@ header nav a {
 
 /*---------Header design SLUT---------*/
 
+
+/*----------forside design------------*/
+
 #splash img {
     /*        position: fixed;
         */
@@ -258,63 +261,19 @@ header nav a {
 
 }
 
-/*
-
-#web {
-    max-width: 1200px;
-    background-color: #f1f1f1f1;
-}
-
-#web .sectionwrapper {
-
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
 
 
-}
-
-#web .col {
-    flex-grow: 1;
-    flex-basis: 500px;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 1rem;
-
-}
-
-    .col_logo {
-        background-image: url(logo%20copy.png);
-        width: 50%;
-        height: 50%;
-        position: absolute;
-        background-size: cover;
-        top: 200px;
-        left: 350px;
-
-    }
-*/
-
-
-
-#books_site .sectionwrapper {
-    background-image: url(img/SVG/SVG/skewbooks.svg);
-    background-repeat: no-repeat;
+.col_logo {
+    background-image: url(logo%20copy.png);
+    width: 50%;
+    height: 50%;
+    position: absolute;
     background-size: cover;
-    margin-top: 75px;
-
-    display: flex;
-    flex-wrap: wrap;
+    top: 200px;
+    left: 350px;
 
 }
 
-
-
-#books_site h1 {
-    top: -40px;
-}
-
-#books_site .menu-icon {}
 
 .scroll {
     position: relative;
@@ -332,10 +291,6 @@ header nav a {
     margin-right: 90px;
     object-fit: cover;
 }
-
-
-
-
 
 
 .book_web img {
@@ -379,3 +334,34 @@ header nav a {
     box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);
 
 }
+
+/*----------forside design slut------------*/
+
+/*----------web site design------------*/
+
+#web {
+    max-width: 1200px;
+    background-color: white;
+}
+
+#web .sectionwrapper {
+
+    display: flex;
+    flex-wrap: wrap;
+/*    margin: 0 auto;
+    */
+
+}
+
+#web .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+/*
+    margin-left: 5px;
+    margin-right: 5px;
+*/
+/*    padding: 1rem;
+    */
+}
+
+/*----------web site design------------*/
