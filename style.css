@@ -27,9 +27,10 @@ p {
 }
 
 h1 {
-    font-family: 'Metal Mania', cursive;
+    font-family: 'Raleway', sans-serif;
+
     color: black;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     opacity: 100%;
     letter-spacing: 1.8px;
     position: relative;
@@ -63,6 +64,7 @@ section {
 }
 
 
+/*
 img {
     filter: url(filters.svg#grayscale);
     filter: gray;
@@ -73,6 +75,7 @@ img:hover {
     filter: none;
     -webkit-filter: none;
 }
+*/
 
 /*---------Header design---------*/
 a {
@@ -307,6 +310,7 @@ header nav a {
 
 }
 
+/*
 #scroll_front .sectionwrapper {
     background-image: url(billeder/SVG/baggrund.svg);
     background-repeat: no-repeat;
@@ -316,6 +320,7 @@ header nav a {
     flex-wrap: wrap;
     top: 40px;
 }
+*/
 
 .scroll {
     position: relative;
@@ -330,8 +335,10 @@ header nav a {
 
 .scroll div img {
 
+    /*
     margin-top: 80px;
     margin-right: 90px;
+*/
     object-fit: cover;
 }
 
@@ -339,42 +346,40 @@ header nav a {
 .book_web img {
     position: relative;
     background-size: cover;
-    width: 30vw;
-    height: 40vw;
+    width: 100vw;
+    /*    height: 40vw;*/
     /*    box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);
     */
-    margin-left: 80px;
+    /*    margin-left: 80px;*/
 
 }
 
 .book_ux img {
     background-size: cover;
-    width: 30vw;
-    height: 40vw;
+    width: 100vw;
+    /*    height: 40vw;*/
     /*    box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);*/
 
 }
 
 .book_ani img {
+    position: relative;
     background-size: cover;
-    width: 30vw;
-    height: 40vw;
+    width: 100vw;
     /*    box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);*/
 
 }
 
 .book_indhold img {
     background-size: cover;
-    width: 30vw;
-    height: 40vw;
+    width: 100vw;
     /*    box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);*/
 
 }
 
 .book_cv img {
     background-size: cover;
-    width: 30vw;
-    height: 40vw;
+    width: 100vw;
     /*    box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);*/
 }
 
@@ -382,28 +387,63 @@ header nav a {
 
 /*----------web site design------------*/
 
+
+
+
+
+.scroll_web {
+    background-image: url(billeder/SVG/baggrund_2.svg);
+    width: 100vw;
+    height: 55vw;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.deathmetal {
+    flex-basis: 500px;
+    flex-grow: 1;
+    padding-left: 50px;
+    padding-top: 70px;
+
+}
+
+.deathmetal img {
+    width: 100%;
+}
+
+.deathmetal_2 {
+    flex-basis: 500px;
+    flex-grow: 1;
+    padding-right: 50px;
+    padding-top: 70px;
+    padding-left: 40px;
+
+}
+
+/*
 #web {
     max-width: 1200px;
     background-color: white;
+
+    background-image: url(billeder/SVG/baggrund_2.svg);
+    background-size: cover;
+
 }
 
 #web .sectionwrapper {
 
     display: flex;
     flex-wrap: wrap;
-    /*    margin: 0 auto;
-    */
+
 
 }
 
 #web .col {
     flex-grow: 1;
     flex-basis: 500px;
-    /*
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 1rem;
-*/
+
 
 }
 
@@ -414,22 +454,8 @@ header nav a {
     margin-right: 5px;
     padding: 1rem;
 
-}
+}*/
 
-
-#web img {
-    filter: url(filters.svg#grayscale);
-    /* Firefox 3.5+ */
-    filter: gray;
-    /* IE6-9 */
-    -webkit-filter: grayscale(1);
-    /* Google Chrome & Safari 6+ */
-}
-
-#web img:hover {
-    filter: none;
-    -webkit-filter: none;
-}
 
 /*----------web site design slut------------*/
 /*---------UX site design------------*/
@@ -613,33 +639,45 @@ header nav a {
 
 
 
-#content_1 {
+#content_1,
+#content_2 {
     max-width: 1200px;
     background-color: white;
 }
 
-#content_1 .col img {
-    width: 90%;
+#content_1 .col_narrow img {
+    width: 100%;
 }
 
 #content_1 .sectionwrapper {
 
     display: flex;
-    flex-wrap: wrap-reverse;
-    /*    margin: 0 auto;
-    */
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+}
+
+#content_2 .sectionwrapper {
+
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 90px;
 
 }
 
 #content_1 .col {
     flex-grow: 1;
-    flex-basis: 500px;
-    /*
+    flex-basis: 300px;
     margin-left: 5px;
     margin-right: 5px;
-*/
-    /*    padding: 1rem;
-    */
+    padding: 1rem;
+
+}
+
+#content_1 .col_bottom {
+    flex-grow: 1;
+    flex-basis: 300px;
+    align-items: center;
 }
 
 #content_1 img {
