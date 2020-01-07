@@ -491,6 +491,12 @@ header nav a {
 
 /*--------content design------------*/
 
+#content .col img {
+    padding: 19px;
+
+    width: 70%;
+}
+
 .parallax_7 {
     background-image: url("billeder/SVG/frontcom.svg");
     min-height: 500px;
@@ -568,8 +574,9 @@ header nav a {
 #cv .text_2 p {
     max-width: 800px;
     /*    padding-left: 150px;*/
-/*    text-align: center;
-    */    padding-bottom: 20px;
+    /*    text-align: center;
+    */
+    padding-bottom: 20px;
 }
 
 #cv .col_2 {
