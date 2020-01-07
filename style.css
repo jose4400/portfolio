@@ -13,97 +13,213 @@ body {
 
 img {
     width: 100%;
-    /*    position: relative;
-    */
+
 }
+
 
 p {
     color: black;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    max-width: 400px;
-
-
+    max-width: 550px;
+    /*    display: block;
+    */
+    line-height: 1.3;
 }
 
 h1 {
     font-family: 'Raleway', sans-serif;
-
     color: black;
-    font-size: 2.8rem;
+    font-size: 2rem;
     opacity: 100%;
-    letter-spacing: 1.8px;
+    letter-spacing: 9px;
     position: relative;
     text-align: center;
     z-index: 2;
     padding: 20px;
+    font-weight: 600;
 }
 
 h2 {
     color: black;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     font-family: 'Lato', sans-serif;
     font-weight: 500;
+    text-align: center;
+    padding-top: 20px;
+
+
+}
+
+h3 {
+    color: black;
+    font-size: 1.3rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    text-align: center;
 }
 
 
-.sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
+
+
+
+.button {
+    font-family: 'Raleway', sans-serif;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    background-color: lightgray;
+    box-shadow: 1px 2px #888888;
+    margin: 3px;
+    opacity: 100%;
+    font-size: 0.7rem;
+    font-weight: 300;
 }
 
-section {
-    margin: auto;
+.button a {
+    color: black;
+}
+
+.button a:hover {
+    color: #A37E9B;
 }
 
 
-.col_wide:hover {
-    filter: none;
-    -webkit-filter: grayscale(1, 0);
-    -webkit-transform: scale(1.01);
+video {
+    width: 100%;
+    height: auto;
+}
+
+/*------pil styling-----*/
+
+.wrap {
+    height: 0%;
+    width: 0%;
+    text-align: left;
+}
+
+.scroll div img {
+    object-fit: cover;
+    cursor: ew-resize;
 }
 
 
-/*
-img {
-    filter: url(filters.svg#grayscale);
-    filter: gray;
-    -webkit-filter: grayscale(1);
+.wrap img {
+    margin: 0px 0 0 -40px;
+    line-height: 60px;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    height: 0px;
+    width: auto;
 }
 
-img:hover {
-    filter: none;
-    -webkit-filter: none;
+.bounce {
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    animation: bounce 3.6s ease infinite;
+    transform-origin: 50% 50%;
 }
-*/
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    5.55556% {
+        transform: translateY(0);
+    }
+
+    11.11111% {
+        transform: translateY(0);
+    }
+
+    22.22222% {
+        transform: translateY(-15px);
+    }
+
+    27.77778% {
+        transform: translateY(0);
+    }
+
+    33.33333% {
+        transform: translateY(-15px);
+    }
+
+    44.44444% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/*-------pil styling slut--------*/
+/*-------hr styling--------*/
+
+hr {
+    width: 20%;
+    height: 1px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.widening {
+    animation-name: widening_kf;
+    animation-duration: 0.9s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes widening_kf {
+    0% {
+        transform: scaleX(1);
+    }
+
+    100% {
+        transform: scaleX(0);
+    }
+
+}
+
+/*-------hr styling slut--------*/
+
+.hide {
+    display: none;
+}
 
 /*---------Header design---------*/
 a {
     visibility: visible;
     text-decoration: none;
     font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-size: 1.1rem;
+    font-weight: 300;
+    font-size: 0.8rem;
     color: black;
 
 }
 
 header {
-    font-family: 'Lato', sans-serif;
     background-color: transparent;
     position: fixed;
     width: 100%;
-    z-index: 4;
-    height: 4rem;
+    z-index: 10;
+    height: 3rem;
     text-align: right;
     font-weight: 400;
     font-size: 0.8rem;
 }
 
+nav img {
+    width: 40px;
+}
 
 header nav a {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     padding: 0.5rem;
     text-transform: uppercase;
     color: black;
@@ -111,20 +227,19 @@ header nav a {
 }
 
 .header nav a:hover {
-    color: lightgray;
+    color: darkgrey;
 }
 
 .header ul {
     margin: 0;
-    padding-right: 20px;
+    padding-right: 10px;
     list-style: none;
     overflow: hidden;
-    background-color: transparent;
 }
 
 .header ul a {
     display: block;
-    padding: 20px;
+    padding: 10px;
     text-decoration: none;
 }
 
@@ -198,52 +313,6 @@ header nav a {
     top: 0;
 }
 
-/*
-@media only screen and (min-width:800px) {
-
-    .header {
-        text-align: center;
-        padding-right: 20vw;
-        background-color: white;
-
-    }
-
-    .header ul {
-        padding-right: 500px;
-        background-color: white;
-    }
-
-    .header li {
-        float: left;
-    }
-
-    .header li a {
-        padding: 20px 10px;
-    }
-
-    .header .menu {
-        clear: none;
-        float: right;
-        max-height: none;
-        align-content: center;
-    }
-
-    .header .menu-icon {
-        display: none;
-    }*/
-
-/*
-    .header .logo {
-        float: left;
-        position: relative;
-        background-size: cover;
-        background-image: url(img/logo/NW_Logo_big_1920px.jpg);
-        width: 173px;
-        height: 71px;
-        padding-left: 250px;
-        z-index: 10;
-    }
-*/
 
 /*---------Header design SLUT---------*/
 
@@ -251,7 +320,6 @@ header nav a {
 /*----------forside design------------*/
 
 #splash img {
-
     z-index: 1;
     margin: 0;
 }
@@ -266,64 +334,18 @@ header nav a {
     position: absolute;
     top: 200px;
     left: 400px;
-    z-index: 2;
+    z-index: 1;
 }
-
-#splash p {
-    font-family: 'Roboto', sans-serif;
-    color: #A25F67;
-    font-size: 3.5rem;
-    opacity: 100%;
-    letter-spacing: 1.8px;
-    position: absolute;
-    top: 300px;
-    left: 800px;
-    z-index: 2;
-
-}
-
-
-
-.col_logo {
-    background-image: url(logo%20copy.png);
-    width: 50%;
-    height: 50%;
-    position: absolute;
-    background-size: cover;
-    top: 200px;
-    left: 350px;
-
-}
-
-/*
-#scroll_front .sectionwrapper {
-    background-image: url(billeder/SVG/baggrund.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 75px;
-    display: flex;
-    flex-wrap: wrap;
-    top: 40px;
-}
-*/
 
 .scroll {
     position: relative;
     display: flex;
     overflow: scroll;
-
     align-items: flex-end;
     top: -30px;
-
-
 }
 
 .scroll div img {
-
-    /*
-    margin-top: 80px;
-    margin-right: 90px;
-*/
     object-fit: cover;
 }
 
@@ -332,354 +354,719 @@ header nav a {
     position: relative;
     background-size: cover;
     width: 100vw;
-    /*    height: 40vw;*/
-    /*    box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);
-    */
-    /*    margin-left: 80px;*/
-
 }
 
 .book_ux img {
     background-size: cover;
     width: 100vw;
-    /*    height: 40vw;*/
-    /*    box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);*/
-
 }
 
 .book_ani img {
     position: relative;
     background-size: cover;
     width: 100vw;
-    /*    box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);*/
-
 }
 
 .book_indhold img {
     background-size: cover;
     width: 100vw;
-    /*    box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);*/
-
 }
 
 .book_cv img {
     background-size: cover;
     width: 100vw;
-    /*    box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.5);*/
 }
 
 /*----------forside design slut------------*/
 
 /*----------web site design------------*/
 
-
-#web_1 {
-    background-color: #DBDBDB;
-}
-
-#web_1 img {
-    width: 100%;
-    position: relative;
-}
-
-#web_2 {
-    background-color: #DBDBDB;
-}
-
-#web_2 img {
-    width: 100%;
-    position: relative;
-}
-
-#web_3 {
-    background-color: #DBDBDB;
-}
-
-#web_3 img {
-    width: 100%;
-    position: relative;
-}
-
-.baggrund_1 {
-    background-image: url(billeder/SVG/grey.svg);
+.col {
     display: flex;
     flex-wrap: wrap;
-    width: 100vw;
-    height: 70vw;
-    background-size: cover;
-
+    flex-direction: row;
+    justify-content: space-between;
+    /*    margin: 1vw;
+    */
+    padding: 2vw;
 }
 
-.baggrund_2 {
-    background-image: url(billeder/SVG/grey.svg);
-    display: flex;
-    flex-wrap: wrap;
-    width: 100vw;
-    height: 70vw;
-    background-size: cover;
-
-
+.col img {
+    /*    padding: 19px;
+    */
 }
 
-.baggrund_3 {
-    background-image: url(billeder/SVG/grey.svg);
-    display: flex;
-    flex-wrap: wrap;
-    width: 100vw;
-    height: 70vw;
-    background-size: cover;
+#ux_1 .col img {
+    padding: 19px;
 
+    width: 70%;
 }
 
-.post_it {
-    padding-left: 200px;
-    padding-right: 300px;
-    padding-bottom: 300px;
-    z-index: 4;
-    position: relative;
 
-}
 
 .text {
-    position: absolute;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 10px;
-    z-index: 5;
+    color: #ddd;
+    background-color: white;
+    /*    padding: 50px 80px;
+    */
+    flex-grow: 1;
+    flex-basis: 300px;
+    padding: 1rem;
+    align-items: center;
 
 }
 
+.parallax {
+    background-image: url("billeder/SVG/ipad.svg");
+    width: 100%;
+    min-height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 30% 10%;
+}
+
+.parallax_2 {
+    background-image: url("billeder/SVG/Web%201920%20%E2%80%93%202.svg");
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60% 10%;
+
+}
 
 /*----------web site design slut------------*/
 /*---------UX site design------------*/
 
-
-#ux_1 {
-    max-width: 1200px;
-    background-color: white;
+.parallax_3 {
+    background-image: url("billeder/SVG/ipad_ux.svg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10% 10%;
 }
 
-
-
-#ux_1 .sectionwrapper {
-
-    display: flex;
-    flex-wrap: wrap;
-    /*    margin: 0 auto;
-    */
-
+.parallax_4 {
+    background-image: url("billeder/SVG/ipad%20kopi%202.svg");
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 30% 10%;
 }
 
-#ux_1 .col {
-    flex-grow: 1;
-    flex-basis: 500px;
-    /*
-    margin-left: 5px;
-    margin-right: 5px;
-*/
-    /*    padding: 1rem;
-    */
-}
-
-#ux_2 {
-    max-width: 1200px;
-    background-color: white;
-}
-
-
-
-#ux_2 .sectionwrapper {
-
-    display: flex;
-    flex-wrap: wrap-reverse;
-    /*    margin: 0 auto;
-    */
-
-}
-
-#ux_2 .col {
-    flex-grow: 1;
-    flex-basis: 500px;
-    /*
-    margin-left: 5px;
-    margin-right: 5px;
-*/
-    /*    padding: 1rem;
-    */
-}
-
-
-#ux_1 img {
-    filter: url(filters.svg#grayscale);
-    /* Firefox 3.5+ */
-    filter: gray;
-    /* IE6-9 */
-    -webkit-filter: grayscale(1);
-    /* Google Chrome & Safari 6+ */
-}
-
-#ux_1 img:hover {
-    filter: none;
-    -webkit-filter: none;
-}
-
-#ux_2 img {
-    filter: url(filters.svg#grayscale);
-    /* Firefox 3.5+ */
-    filter: gray;
-    /* IE6-9 */
-    -webkit-filter: grayscale(1);
-    /* Google Chrome & Safari 6+ */
-}
-
-#ux_2 img:hover {
-    filter: none;
-    -webkit-filter: none;
-}
 
 /*---------UX site design slut------------*/
 
 /*--------Animation site design------------*/
 
-#ani_1 {
-    max-width: 1200px;
-    background-color: white;
+
+
+.parallax_5 {
+    background-image: url("billeder/SVG/computer%20kopi%202.svg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*    background-position: 29% 10%;*/
 }
 
-#ani_1 .col img {
-    width: 90%;
+.parallax_6 {
+    background-image: url("billeder/SVG/computer%20kopi.svg");
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70% 80%;
 }
-
-#ani_1 .sectionwrapper {
-
-    display: flex;
-    flex-wrap: wrap-reverse;
-    /*    margin: 0 auto;
-    */
-
-}
-
-#ani_1 .col {
-    flex-grow: 1;
-    flex-basis: 500px;
-    /*
-    margin-left: 5px;
-    margin-right: 5px;
-*/
-    /*    padding: 1rem;
-    */
-}
-
-#ani_2 {
-    max-width: 1200px;
-    background-color: white;
-}
-
-#ani_2 .col img {
-    width: 90%;
-}
-
-#ani_2 .sectionwrapper {
-
-    display: flex;
-    flex-wrap: wrap-reverse;
-    /*    margin: 0 auto;
-    */
-
-}
-
-#ani_2 .col {
-    flex-grow: 1;
-    flex-basis: 500px;
-    /*
-    margin-left: 5px;
-    margin-right: 5px;
-*/
-    /*    padding: 1rem;
-    */
-}
-
-#ani_1 img {
-    filter: url(filters.svg#grayscale);
-    /* Firefox 3.5+ */
-    filter: gray;
-    /* IE6-9 */
-    -webkit-filter: grayscale(1);
-    /* Google Chrome & Safari 6+ */
-}
-
-#ani_1 img:hover {
-    filter: none;
-    -webkit-filter: none;
-}
-
-#ani_2 img {
-    filter: url(filters.svg#grayscale);
-    /* Firefox 3.5+ */
-    filter: gray;
-    /* IE6-9 */
-    -webkit-filter: grayscale(1);
-    /* Google Chrome & Safari 6+ */
-}
-
-#ani_2 img:hover {
-    filter: none;
-    -webkit-filter: none;
-}
-
 
 /*--------Animation site design slut------------*/
 
+/*--------content site design------------*/
 
+.parallax_7 {
+    background-image: url("billeder/SVG/frontcom.svg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 12% 10%;
+}
 
-#content_1,
-#content_2 {
-    max-width: 1200px;
+.parallax_8 {
+    background-image: url("billeder/SVG/bookscom.svg");
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 5% 10%;
+}
+
+.video {
+    color: #ddd;
     background-color: white;
-}
-
-#content_1 .col_narrow img {
-    width: 100%;
-}
-
-#content_1 .sectionwrapper {
-
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-
-}
-
-#content_2 .sectionwrapper {
-
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 90px;
-
-}
-
-#content_1 .col {
+    text-align: center;
+    padding: 50px 80px;
+    text-align: justify;
     flex-grow: 1;
     flex-basis: 300px;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 1rem;
 
 }
 
-#content_1 .col_bottom {
-    flex-grow: 1;
-    flex-basis: 300px;
+.col_bottom {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
+    padding-left: 190px;
+    background-color: white;
+    padding: 50px 80px;
+    flex-grow: 1;
+    flex-basis: 300px;
+    padding: 1rem;
 }
 
-#content_1 img {
-    filter: url(filters.svg#grayscale);
-    filter: gray;
-    -webkit-filter: grayscale(1);
+
+
+/*--------content site design slut------------*/
+
+/*--------CV site design------------*/
+
+#cv ul {
+    color: black;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    max-width: 900px;
+    display: block;
 }
 
-#content_1 img:hover {
-    filter: none;
-    -webkit-filter: none;
+#cv .text_1 {
+    color: #ddd;
+    flex-grow: 1;
+    flex-basis: 600px;
+    align-items: center;
+
+}
+
+
+#cv .text img {
+    width: 50%;
+
+
+}
+
+#cv .text_2 p {
+    max-width: 800px;
+    padding-left: 150px;
+}
+
+#cv .col_2 {
+    color: #ddd;
+    flex-grow: 1;
+    flex-basis: 600px;
+    align-content: center;
+    margin: 0;
+}
+
+.parallax_9 {
+    background-image: url("billeder/cv_img/IMG_2152.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+        background-position: 30% 10%;}
+
+
+.parallax_10 {
+    background-image: url("billeder/cv_img/TanjaT1268b.jpg");
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+        background-position: 40% 10%;}
+
+.parallax_11 {
+    background-image: url("billeder/cv_img/phineraunbranding-96.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+        background-position: 40% 10%;}
+
+
+.parallax_12 {
+    background-image: url("billeder/cv_img/TanjaNin.png");
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+        background-position: 0% 10%;
+}
+
+/*
+.parallax_13 {
+    background-image: url("billeder/cv_img/is.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80% 10%;
+}*/
+
+
+
+
+/*--------CV site design slut------------*/
+
+
+footer p {
+    color: black;
+    font-size: 0.8rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    max-width: 400px;
+    display: block;
+    padding-left: 50px;
+
+}
+
+footer img {
+    width: 60px;
+    padding: 0;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .col {
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+
+@media only screen and (min-width:800px) {
+
+    a {
+        visibility: visible;
+        text-decoration: none;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 1.1rem;
+        color: black;
+
+    }
+
+    header {
+        font-family: 'Lato', sans-serif;
+        background-color: transparent;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        height: 4rem;
+        text-align: center;
+        font-weight: 400;
+        font-size: 0.8rem;
+    }
+
+    nav img {
+        width: 68px;
+    }
+
+    header nav a {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+        text-transform: uppercase;
+        color: black;
+        text-decoration: none;
+    }
+
+    .header nav a:hover {
+        color: lightgray;
+    }
+
+    .header ul {
+        margin: 0;
+        padding-right: 20px;
+        list-style: none;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .header ul a {
+        display: block;
+        padding: 20px;
+        text-decoration: none;
+    }
+
+    .header ul a:hover {}
+
+
+    .header .menu {
+        clear: left;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+    }
+
+    .header .menu-icon {
+        padding: 28px 20px;
+        position: relative;
+        float: right;
+        cursor: pointer;
+    }
+
+    .header .menu-icon .nav-icon {
+        background: #333;
+        display: block;
+        height: 2px;
+        width: 18px;
+        position: relative;
+        transition: background .2s ease-out;
+    }
+
+    .header .menu-icon .nav-icon:before {
+        background: #333;
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        top: 5px;
+        transition: all .2s ease-out;
+    }
+
+    .header .menu-icon .nav-icon:after {
+        background: #333;
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        top: -5px;
+        transition: all .2s ease-out;
+    }
+
+    .header .menu-btn {
+        display: none;
+
+    }
+
+    .header .menu-btn:checked ~ .menu {
+        max-height: 440px;
+    }
+
+    .header .menu-btn:checked ~ .menu-icon .nav-icon {
+        background: transparent;
+    }
+
+    .header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    .header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+
+    .wrap {
+        height: 100%;
+        width: 100%;
+        text-align: left;
+    }
+
+
+
+    .wrap img {
+        margin: 0px 0 0 -40px;
+        line-height: 60px;
+        position: absolute;
+        left: 50%;
+        bottom: 0px;
+        height: 50px;
+        width: auto;
+    }
+
+    .bounce {
+        animation-iteration-count: infinite;
+        animation-duration: 1.5s;
+        animation: bounce 3.6s ease infinite;
+        transform-origin: 50% 50%;
+    }
+
+    @keyframes bounce {
+        0% {
+            transform: translateY(0);
+        }
+
+        5.55556% {
+            transform: translateY(0);
+        }
+
+        11.11111% {
+            transform: translateY(0);
+        }
+
+        22.22222% {
+            transform: translateY(-15px);
+        }
+
+        27.77778% {
+            transform: translateY(0);
+        }
+
+        33.33333% {
+            transform: translateY(-15px);
+        }
+
+        44.44444% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+
+
+    h1 {
+        font-family: 'Raleway', sans-serif;
+        color: black;
+        font-size: 2.1rem;
+        opacity: 100%;
+        letter-spacing: 9px;
+        position: relative;
+        text-align: center;
+        z-index: 2;
+        padding: 20px;
+        font-weight: 600;
+    }
+
+    p {
+        color: black;
+        font-size: 1.1rem;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        max-width: 550px;
+        /*    display: block;
+    */
+        line-height: 1.3;
+    }
+
+}
+
+@media only screen and (min-width:900px) {
+    h1 {
+        font-family: 'Raleway', sans-serif;
+        color: black;
+        font-size: 2.2rem;
+        opacity: 100%;
+        letter-spacing: 9px;
+        position: relative;
+        text-align: center;
+        z-index: 2;
+        padding: 20px;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (min-width:1000px) {
+    h1 {
+        font-family: 'Raleway', sans-serif;
+        color: black;
+        font-size: 2.3rem;
+        opacity: 100%;
+        letter-spacing: 9px;
+        position: relative;
+        text-align: center;
+        z-index: 2;
+        padding: 20px;
+        font-weight: 600;
+    }
+
+    p {
+        color: black;
+        font-size: 1.1rem;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        max-width: 550px;
+        /*    display: block;
+    */
+        line-height: 1.3;
+    }
+}
+
+@media only screen and (min-width:1100px) {
+    h1 {
+        font-family: 'Raleway', sans-serif;
+        color: black;
+        font-size: 2.4rem;
+        opacity: 100%;
+        letter-spacing: 9px;
+        position: relative;
+        text-align: center;
+        z-index: 2;
+        padding: 20px;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    h1 {
+        font-family: 'Raleway', sans-serif;
+        color: black;
+        font-size: 2.5rem;
+        opacity: 100%;
+        letter-spacing: 9px;
+        position: relative;
+        text-align: center;
+        z-index: 2;
+        padding: 20px;
+        font-weight: 600;
+    }
+
+    .parallax {
+        background-image: url("billeder/SVG/ipad.svg");
+        min-height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*    background-position: 30% 10%;*/
+    }
+
+    .parallax_2 {
+        background-image: url("billeder/SVG/Web%201920%20%E2%80%93%202.svg");
+        min-height: 600px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*    background-position: 60% 10%;*/
+    }
+
+    .parallax_3 {
+        background-image: url("billeder/SVG/ipad_ux.svg");
+        min-height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*    background-position: 10% 10%;*/
+
+    }
+
+    .parallax_4 {
+        background-image: url("billeder/SVG/ipad%20kopi%202.svg");
+        min-height: 600px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*    background-position: 30% 10%;*/
+    }
+
+    .parallax_5 {
+        background-image: url("billeder/SVG/computer%20kopi%202.svg");
+        min-height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*    background-position: 29% 10%;*/
+    }
+
+    .parallax_6 {
+        background-image: url("billeder/SVG/computer%20kopi.svg");
+        min-height: 600px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*    background-position: 70% 80%;*/
+    }
+
+    .parallax_7 {
+        background-image: url("billeder/SVG/frontcom.svg");
+        min-height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*    background-position: 12% 10%;*/
+    }
+
+    .parallax_8 {
+        background-image: url("billeder/SVG/bookscom.svg");
+        min-height: 600px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*    background-position: 5% 10%;*/
+    }
+
+    .parallax_9 {
+        background-image: url("billeder/cv_img/IMG_2152.jpg");
+        min-height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*    background-position: 30% 10%;*/
+    }
+
+
+    .parallax_10 {
+        background-image: url("billeder/cv_img/TanjaT1268b.jpg");
+        min-height: 600px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*    background-position: 40% 10%;*/
+    }
+
+    .parallax_11 {
+        background-image: url("billeder/cv_img/phineraunbranding-96.jpg");
+        min-height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*    background-position: 40% 10%;*/
+    }
+
+
+    .parallax_12 {
+        background-image: url("billeder/cv_img/TanjaNin.png");
+        min-height: 600px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*    background-position: 0% 10%;
+    */
+    }
 }
